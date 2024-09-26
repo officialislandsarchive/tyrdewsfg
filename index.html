@@ -9,13 +9,26 @@
 <body>
     <div class="container">
         <h1>Change Image Theme Color</h1>
-        <div class="image-container">
-            <img id="themeImage" src="purple_image.png" alt="Theme Image">
-            <div class="overlay" id="colorOverlay"></div>
+        <div class="image-wrapper">
+            <div class="image-container">
+                <img id="themeImage1" src="purple_image.png" alt="Theme Image 1">
+                <div class="overlay" id="colorOverlay1"></div>
+            </div>
+
+            <div class="image-container">
+                <img id="themeImage2" src="purple_quadrants.png" alt="Theme Image 2">
+                <div class="overlay" id="colorOverlay2"></div>
+            </div>
         </div>
+
         <div class="color-picker">
-            <label for="colorInput">Pick a color: </label>
-            <input type="color" id="colorInput" value="#ff6600">
+            <label for="colorInput1">Pick a color for Image 1: </label>
+            <input type="color" id="colorInput1" value="#ff6600">
+        </div>
+
+        <div class="color-picker">
+            <label for="colorInput2">Pick a color for Image 2: </label>
+            <input type="color" id="colorInput2" value="#6600ff">
         </div>
     </div>
 

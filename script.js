@@ -7,9 +7,11 @@ const colorOverlay2 = document.getElementById('colorOverlay2');
 colorInput1.addEventListener('input', function () {
     const selectedColor = colorInput1.value;
     colorOverlay1.style.backgroundColor = selectedColor;
+    colorOverlay1.style.opacity = '0.5'; 
 });
 
 colorInput2.addEventListener('input', function () {
     const selectedColor = colorInput2.value;
     colorOverlay2.style.backgroundColor = selectedColor;
+    colorOverlay2.style.opacity = '0.5'; 
 });

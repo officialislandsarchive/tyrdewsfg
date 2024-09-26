@@ -3,41 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Purple Quadrants</title>
-    <style>
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            width: 200px;
-            height: 200px;
-        }
-        .grid div {
-            width: 100%;
-            height: 100%;
-        }
-        .top-left {
-            background-color: #a349a4; /* Light purple */
-        }
-        .top-right {
-            background-color: #5d3f95; /* Dark purple */
-        }
-        .bottom-left {
-            background-color: white; /* White */
-        }
-        .bottom-right {
-            background-color: #7e3794; /* Dark purple */
-        }
-    </style>
+    <title>Image Theme Changer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="container">
+        <h1>Change Image Theme Color</h1>
+        <div class="image-container">
+            <img id="themeImage" src="purple_image.png" alt="Theme Image">
+            <div class="overlay" id="colorOverlay"></div>
+        </div>
+        <div class="color-picker">
+            <label for="colorInput">Pick a color: </label>
+            <input type="color" id="colorInput" value="#ff6600">
+        </div>
+    </div>
 
-<div class="grid">
-    <div class="top-left"></div>
-    <div class="top-right"></div>
-    <div class="bottom-left"></div>
-    <div class="bottom-right"></div>
-</div>
-
+    <script src="script.js"></script>
 </body>
 </html>

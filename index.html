@@ -3,32 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flamelet Color Changerr</title>
+    <title>Flamelet Color Change</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <h1>Change Image Theme Color</h1>
-        <div class="image-wrapper">
-            <div class="image-container">
-                <img id="themeImage1" src="purple_image.png" alt="Theme Image 1">
-                <div class="overlay" id="colorOverlay1"></div>
-            </div>
-
-            <div class="image-container">
-                <img id="themeImage2" src="purple_quadrants.png" alt="Theme Image 2">
-                <div class="overlay" id="colorOverlay2"></div>
-            </div>
+        <div class="image-container">
+            <img id="themeImage" src="purple_image.png" alt="Theme Image">
+            <div class="overlay" id="colorOverlay"></div>
         </div>
-
         <div class="color-picker">
-            <label for="colorInput1">Pick a color for Image 1: </label>
-            <input type="color" id="colorInput1" value="#ff6600">
-        </div>
-
-        <div class="color-picker">
-            <label for="colorInput2">Pick a color for Image 2: </label>
-            <input type="color" id="colorInput2" value="#6600ff">
+            <label for="colorInput">Pick a color: </label>
+            <input type="color" id="colorInput" value="#ff6600">
         </div>
     </div>
 

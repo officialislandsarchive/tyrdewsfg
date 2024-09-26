@@ -13,14 +13,20 @@ body {
     text-align: center;
 }
 
+.image-wrapper {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
 .image-container {
     position: relative;
     display: inline-block;
 }
 
 img {
-    width: 400px;
-    height: auto;
+    width: 200px;
+    height: 200px;
 }
 
 .overlay {
@@ -35,7 +41,7 @@ img {
 }
 
 .color-picker {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 input[type="color"] {
